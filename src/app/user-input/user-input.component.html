@@ -8,6 +8,9 @@
         type="number"
         [(ngModel)]="enteredInitialInvestment"
       />
+      <!-- we actually don't need to call these signals 
+      and you shouldn't call them because ngModel actually already is built such that internally it does accept signals as inputs as well,
+      and it will automatically read them and set up a subscription then. -->
     </p>
     <p>
       <label for="annual-investment">Annual Investment</label>
